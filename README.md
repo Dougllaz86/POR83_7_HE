@@ -1,1 +1,1 @@
-ART71_1
+templateEF71
