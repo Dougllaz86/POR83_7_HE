@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Work+Sans:wght@400;700&display=swap');
 
-
 /* GERAL */
-
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
@@ -73,7 +71,7 @@ ul {
 
 .legenda {
   margin-bottom: 3em;
-  margin-top: -15px;
+  /* margin-top: -15px; */
 }
 
 .hero.is-large .hero-body blockquote {
@@ -91,7 +89,6 @@ ul {
 }
 
 /* TEXTO */
-
 h1,
 h2,
 h3,
@@ -99,6 +96,7 @@ h4,
 h5 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
+  margin: 1em 0;
 }
 
 h1 {
@@ -169,12 +167,11 @@ li {
   margin-bottom: 5px;
 }
 
-li * {
+li>* {
   font-weight: 400;
 }
 
 /* ABERTURA */
-
 .abertura {
   position: relative;
   padding-bottom: 0;
@@ -206,7 +203,6 @@ li * {
 }
 
 /* EXERCÍCIOS */
-
 textarea {
   margin: 15px 0 25px;
   background-color: white !important;
@@ -247,4 +243,25 @@ textarea {
   ol {
     padding-left: 15px;
   }
+}
+
+.mapa h3 {
+  width: fit-content;
+  background: #ff9400;
+  padding: 10px;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0 !important;
+  transform: rotate(0) !important;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.buttons .button a {
+  text-decoration: none !important;
+  font-weight: 800;
 }
