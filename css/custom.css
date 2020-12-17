@@ -21,15 +21,15 @@ section {
 }
 
 .is-primary {
-  background-color: #F6B691 !important;
+  background-color: #BED7B0 !important;
 }
 
 .notification.is-warning {
-  background-color: #A788BE;
+  background-color: #95B6DF;
 }
 
 .hero .notification.is-warning {
-  background-color: #D56C30 !important;
+  background-color: #619744 !important;
   color: #fff;
 }
 
@@ -38,12 +38,12 @@ section {
 }
 
 .table tr.is-selected {
-  background-color: #D56C30 !important;
+  background-color: #619744 !important;
   color: #fff;
 }
 
 .is-primary .columns div {
-  background: #F6B691;
+  background: #BED7B0;
   color: white;
 }
 
@@ -71,7 +71,7 @@ ul {
 
 .legenda {
   margin-bottom: 3em;
-  /* margin-top: -15px; */
+  margin-top: 15px;
 }
 
 .hero.is-large .hero-body blockquote {
@@ -96,7 +96,6 @@ h4,
 h5 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
-  margin: 1em 0;
 }
 
 h1 {
@@ -112,15 +111,16 @@ h1 span {
   border-radius: 3px;
   box-shadow: 4px 4px 1px #4d2014;
   margin-bottom: 10px;
-  background-color: #D56C30;
+  background-color: #619744;
   padding: 7px;
   display: inline-block;
 }
 
 .content .legenda h6:first-child {
-  font-weight: 600 !important;
+  /* font-weight: 600 !important; */
   background-color: transparent;
-  color: #D56C30;
+  text-align: left;
+  color: #619744;
   margin-bottom: 1rem;
   padding: 0 10px;
 }
@@ -128,7 +128,7 @@ h1 span {
 .content .legenda h6 {
   font-weight: 400 !important;
   color: #fff;
-  background-color: #D56C30;
+  background-color: #619744;
   padding: 10px;
   border-radius: 3px;
 }
@@ -140,7 +140,7 @@ blockquote strong {
 
 .notification.is-primary h3 {
   width: fit-content;
-  background: #D56C30;
+  background: #619744;
   padding: 10px;
   transform: rotate(-5deg);
   margin-top: -35px;
@@ -150,7 +150,7 @@ blockquote strong {
 
 .mapa h3 {
   width: fit-content;
-  background: #D56C30;
+  background: #619744;
   padding: 10px;
   color: white;
   margin-bottom: 0;
@@ -167,7 +167,7 @@ li {
   margin-bottom: 5px;
 }
 
-li>* {
+li * {
   font-weight: 400;
 }
 
@@ -199,7 +199,7 @@ li>* {
 }
 
 .abertura .title {
-  color: #D56C30;
+  color: #619744;
 }
 
 /* EXERCÍCIOS */
@@ -245,23 +245,6 @@ textarea {
   }
 }
 
-.mapa h3 {
-  width: fit-content;
-  background: #ff9400;
-  padding: 10px;
-  color: white;
-  margin-bottom: 0;
-  margin-top: 0 !important;
-  transform: rotate(0) !important;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.buttons .button a {
+.message button a {
   text-decoration: none !important;
-  font-weight: 800;
 }
