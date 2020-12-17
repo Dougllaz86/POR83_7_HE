@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Work+Sans:wght@400;700&display=swap');
 
 /* GERAL */
 body {
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
+  background-color: #BED7B0;
+  padding: 30px 0;
 }
 
 .hero,
@@ -14,10 +17,12 @@ section {
   background-attachment: scroll, fixed;
 }
 
-.hero .legenda {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+section.hora-de-estudo {
+  background-color: white;
+  max-width: 920px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #619744;
 }
 
 .is-primary {
@@ -26,20 +31,6 @@ section {
 
 .notification.is-warning {
   background-color: #95B6DF;
-}
-
-.hero .notification.is-warning {
-  background-color: #619744 !important;
-  color: #fff;
-}
-
-.hero.is-primary .title {
-  color: #111;
-}
-
-.table tr.is-selected {
-  background-color: #619744 !important;
-  color: #fff;
 }
 
 .is-primary .columns div {
@@ -71,7 +62,7 @@ ul {
 
 .legenda {
   margin-bottom: 3em;
-  margin-top: 15px;
+  margin-top: -15px;
 }
 
 .hero.is-large .hero-body blockquote {
@@ -104,6 +95,11 @@ h1 {
   margin-bottom: 2.5rem !important;
 }
 
+.hora-de-estudo h1 {
+  color: #4d2014;
+  margin-bottom: 1.5rem !important;
+}
+
 h1 span {
   font-size: 0.75rem;
   font-family: 'Work Sans', sans-serif;
@@ -119,10 +115,10 @@ h1 span {
 .content .legenda h6:first-child {
   /* font-weight: 600 !important; */
   background-color: transparent;
-  text-align: left;
   color: #619744;
   margin-bottom: 1rem;
   padding: 0 10px;
+  text-align: left;
 }
 
 .content .legenda h6 {
@@ -164,10 +160,14 @@ h6 span {
 
 li {
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 
-li * {
+li ol li {
+  margin-bottom: 10px;
+}
+
+li>* {
   font-weight: 400;
 }
 
@@ -215,25 +215,7 @@ textarea {
   box-shadow: 0px 0px 3px #999;
 }
 
-@media only screen and (min-width: 769px) {
-  #cap1 {
-    background-attachment: fixed;
-  }
-}
-
 @media only screen and (max-width: 560px) {
-  .abertura .column {
-    padding: 10px 15px 0;
-  }
-
-  .hero.is-large .hero-body {
-    height: 45vh;
-  }
-
-  .abertura .ponto-partida {
-    padding: 30px 0 0;
-  }
-
   h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem !important;
@@ -245,6 +227,13 @@ textarea {
   }
 }
 
-.message button a {
-  text-decoration: none !important;
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.table tr.is-selected {
+  background-color: #619744 !important;
+  color: #fff;
 }
