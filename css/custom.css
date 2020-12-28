@@ -248,3 +248,7 @@ textarea {
   font-size: 0.6em;
   opacity: 0.8;
 }
+
+.has-text-primary {
+  color: #619744 !important;
+}
