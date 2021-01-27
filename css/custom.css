@@ -252,3 +252,23 @@ textarea {
 .has-text-primary {
   color: #74489D !important;
 }
+
+.notification.is-primary h3 {
+  width: fit-content;
+  background: #74489D;
+  padding: 10px;
+  transform: rotate(-5deg);
+  margin-top: -35px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.content .legenda h6:first-child {
+  /* font-weight: 600 !important; */
+  background-color: transparent;
+  text-align: left;
+  color: #74489D;
+  margin-bottom: 1rem;
+  padding: 0 10px;
+  word-break: break-word;
+}
