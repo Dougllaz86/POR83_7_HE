@@ -1,0 +1,27 @@
+.katex-display {
+  display: inline-block;
+  margin: 1em 0;
+  text-align: center;
+}
+
+p span .textarea {
+  display: inline-block;
+  max-width: 100px;
+  min-width: 20px;
+  vertical-align: middle;
+}
+
+.table td.is-selected, .table th.is-selected, .has-background-primary {
+  background-color: #74489D !important;
+  color: #fff !important;
+}
+
+.content .table td {
+  vertical-align: middle;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-desktop {
+    max-width: 50%;
+  }
+}
